@@ -48,13 +48,20 @@ Le script créera automatiquement un dossier gzip/ contenant les fichiers requis
 
 ## 📊 Performances Expérimentales
 Afin d'éviter les phénomènes de goulot d'étranglement de l'information sur le dataset EMNIST Balanced (47 classes : chiffres, lettres majuscules et minuscules), l'architecture finale retenue possède deux couches cachées de dimension [512, 256].
+
 Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais.
+
 Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50).
+
 Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %).
 
 ## 👥 Contributeurs (Prépa Toulouse Transitions)
 Sacha Garrouste : Intégration et manipulation des structures de la base de données EMNIST.
+
 Jeanne Reberga : Intégration globale de code, gestion des présentations et mise au propre des architectures algorithmiques.
+
 Thomas Stapelfeld : Modélisation théorique et implémentation de la rétropropagation.
+
 Albert Tellia : Recherches et analyse orienté transitions écologique et sociales vis à vis de l'IA.
+
 Thomas Mauline : Optimisation algorithmique (Vectorisation NumPy) et conception du scénario de traitement et conversion d'images.
