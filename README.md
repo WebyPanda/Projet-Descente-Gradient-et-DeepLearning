@@ -37,22 +37,24 @@ Le script créera automatiquement un dossier gzip/ contenant les fichiers requis
 ## ⚙️ Structure du Projet
 ```Plaintext
 📁 Projet-Descente-Gradient-et-DeepLearning/
-├── 📄 download_emnist.py    # Script de récupération sécurisée du dataset
-├── 📄 reseau_neurones.py    # Cœur mathématique du perceptron (Architecture, Forward, Backward)
-├── 📄 entrainement.py       # Algorithmes d'optimisation (Batch, Stochastique, Mini-Batch, Moment)
-├── 📄 scenario.py           # Pipeline de vision par ordinateur (Binarisation, Rognage, Inférence)
-├── 📁 data/                 # Dossier local généré contenant EMNIST (ignoré par Git)
-├── 📁 images_test/          # Répertoire destiné aux photographies à analyser
-└── 📄 README.md             # Documentation
+│── 📁 gzip/                     # Fichiers bruts EMNIST (générés par le script, ignorés par Git)
+├── 📁 images/                   # Dossier contenant les images utilisées par le modèle/scénario
+├── 📄 Descriptif déscente de gradient (Projet S4).pdf  # Sujet et descriptif initial du tuteur
+├── 📄 Rapport du Projet.pdf     # Rapport final de l'étude
+├── 📄 Reconnaissance de caractères manuscrits.ipynb    # Code source complet (Notebook Jupyter)
+├── 📄 download_eminst.py        # Script d'automatisation du téléchargement de la base de données
+└── 📄 README.md                 # Documentation principale
 ```
 
 ## 📊 Performances Expérimentales
 Afin d'éviter les phénomènes de goulot d'étranglement de l'information sur le dataset EMNIST Balanced (47 classes : chiffres, lettres majuscules et minuscules), l'architecture finale retenue possède deux couches cachées de dimension [512, 256].
-Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais.Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50).Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %).
+Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais.
+Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50).
+Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %).
 
 ## 👥 Contributeurs (Prépa Toulouse Transitions)
-Thomas Mauline : Optimisation algorithmique (Vectorisation NumPy, typage strict) et conception du pipeline de traitement d'images (Scénario).
-Thomas Stapelfeld : Structure des couches intermédiaires, modélisation théorique et implémentation de la rétropropagation.
-Albert Tellia : Modélisation mathématique des neurones, recherche sur l'architecture réseau et implémentation des algorithmes de descente de gradient.
 Sacha Garrouste : Intégration et manipulation des structures de la base de données EMNIST.
-Jeanne Reberga : Intégration globale du code, gestion des présentations et mise au propre des architectures algorithmiques.
+Jeanne Reberga : Intégration globale de code, gestion des présentations et mise au propre des architectures algorithmiques.
+Thomas Stapelfeld : Modélisation théorique et implémentation de la rétropropagation.
+Albert Tellia : Recherches et analyse orienté transitions écologique et sociales vis à vis de l'IA.
+Thomas Mauline : Optimisation algorithmique (Vectorisation NumPy) et conception du scénario de traitement et conversion d'images.
