@@ -13,7 +13,7 @@ This repository contains the complete implementation of an artificial neural net
 
 ### 1. Dependencies
 
-The project requires a Python 3.x environment and the following standard libraries:
+The project requires a Python 3.x environment and the following standard libraries :
 
 ```bash
 pip install numpy Pillow matplotlib
