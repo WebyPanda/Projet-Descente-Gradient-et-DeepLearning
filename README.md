@@ -49,11 +49,11 @@ Le script créera automatiquement un dossier gzip/ contenant les fichiers requis
 ## Performances Expérimentales
 Afin d'éviter les phénomènes de goulot d'étranglement de l'information sur le dataset EMNIST Balanced (47 classes : chiffres, lettres majuscules et minuscules), l'architecture finale retenue possède deux couches cachées de dimension [512, 256].
 
-Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais.
+Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais
 
-Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50).
+Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50)
 
-Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %).
+Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %)
 
 ## Contributeurs (Prépa Toulouse Transitions)
 Sacha Garrouste : Intégration et manipulation des structures de la base de données EMNIST.
