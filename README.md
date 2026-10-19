@@ -53,7 +53,7 @@ Paramètres synaptiques ajustés : > $5,4 \times 10^5$ poids et biais
 
 Méthode d'entraînement : Gradient stochastique par Mini-Batch (lots de 50)
 
-Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 %)
+Taux de réussite final : 85,2 % en généralisation. (Sur un set réduit aux chiffres uniquement, la précision dépasse les 96 % !)
 
 ## Contributeurs (Prépa Toulouse Transitions)
 Sacha Garrouste : Intégration et manipulation des structures de la base de données EMNIST.
